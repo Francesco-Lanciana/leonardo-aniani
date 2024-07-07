@@ -4,12 +4,13 @@ This is my submission for the Leonardo.ai coding challenge
 
 ## What I would have added with more time
 
--   A more cohesive design system
+-   Some sort of cohesive design system
 -   Incorporated more elements from Chakra UI, e.g. Box, Grid, etc.
 -   Better error handling, e.g. if the GraphQL query errors the page will just render an error
--   Store the user data in a DB
+-   Store the user data in a DB instead of a cookie
 -   Working tests (I've added a description of what I would test as a backup)
 -   Optimise images, e.g. prefetch when hovering on a tile
+-   Make the site look better on a mobile phone
 
 ## Suggestions for improving the Leonardo.ai image canvas
 
