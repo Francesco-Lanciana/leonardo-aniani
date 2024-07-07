@@ -1,5 +1,11 @@
 'use server';
 
+/**
+ * The logic for these two server actions is identical, however I kept them as two seperate functions
+ * as their behaviour is likely to diverge in the future, e.g. updating information may include fields
+ * not needed whilst registering.
+ */
+
 import { redirect } from 'next/navigation';
 import { cookies } from 'next/headers';
 import { z } from 'zod';
@@ -11,7 +17,7 @@ const schema = z.object({
     jobTitle: z.string().trim().min(1),
 });
 
-export async function handleRegisterSubmit(prevData: any, formData: FormData) {
+export async function handleRegisterSubmit(prevData: unknown, formData: FormData) {
     const validatedFields = schema.safeParse({
         username: formData.get('username'),
         jobTitle: formData.get('jobtitle'),
@@ -29,7 +35,7 @@ export async function handleRegisterSubmit(prevData: any, formData: FormData) {
     redirect('/information');
 }
 
-export async function handleUpdateInformation(prevData: any, formData: FormData) {
+export async function handleUpdateInformation(prevData: unknown, formData: FormData) {
     const validatedFields = schema.safeParse({
         username: formData.get('username'),
         jobTitle: formData.get('jobtitle'),
@@ -43,4 +49,6 @@ export async function handleUpdateInformation(prevData: any, formData: FormData)
 
     cookies().set(USER_USERNAME_COOKIE, validatedFields.data.username);
     cookies().set(USER_JOBTITLE_COOKIE, validatedFields.data.jobTitle);
+
+    redirect('/information');
 }
