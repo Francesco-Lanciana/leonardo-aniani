@@ -1,0 +1,67 @@
+.bannerImageContainer {
+    margin-bottom: 1.5rem;
+}
+
+.primaryTitle {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.secondaryTitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.titleInfo {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1.5rem;
+}
+
+.animeInfo {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.airingInfo {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.airingInfoItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    background: hsl(0deg 0% 0% / 20%);
+    color: hsl(197 6% 78% / 1);
+}
+
+.reviews {
+    display: flex;
+    align-items: center;
+    color: #dadada;
+    gap: 0.25rem;
+    font-size: 0.875rem;
+}
+
+.starIcon {
+    height: 1rem;
+    width: 1rem;
+    fill: currentColor;
+}
+
+.description {
+    line-height: 1.7;
+    white-space: pre-wrap;
+}
+
+.bannerImage {
+    object-fit: cover;
+    height: 170px;
+}
