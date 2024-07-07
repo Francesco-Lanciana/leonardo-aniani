@@ -1,14 +1,16 @@
 'use client';
 
-// We can not useState or useRef in a server component, which is why we are
-// extracting this part out into it's own file with 'use client' on top
-import { ChakraProvider } from '@chakra-ui/react';
+import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
 import { ApolloWrapper } from './ApolloWrapper';
+import theme from '@/styles/theme';
 
 const Providers: React.FC<{ children: React.ReactNode }> = ({ children }) => {
     return (
         <ApolloWrapper>
-            <ChakraProvider>{children}</ChakraProvider>
+            <ChakraProvider theme={theme}>
+                <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+                {children}
+            </ChakraProvider>
         </ApolloWrapper>
     );
 };
