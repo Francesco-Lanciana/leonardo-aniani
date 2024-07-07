@@ -1,0 +1,26 @@
+.main {
+    max-width: 32rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.inputs {
+    background-color: #141519;
+    padding: 3rem 1.5rem;
+    border-radius: 8px;
+}
+
+.inputContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+
+    label {
+        color: #dadada;
+    }
+}
