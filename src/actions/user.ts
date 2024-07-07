@@ -17,7 +17,7 @@ const schema = z.object({
     jobTitle: z.string().trim().min(1),
 });
 
-export async function handleRegisterSubmit(prevData: unknown, formData: FormData) {
+export async function handleRegisterSubmit(formData: FormData) {
     const validatedFields = schema.safeParse({
         username: formData.get('username'),
         jobTitle: formData.get('jobtitle'),
@@ -35,7 +35,7 @@ export async function handleRegisterSubmit(prevData: unknown, formData: FormData
     redirect('/information');
 }
 
-export async function handleUpdateInformation(prevData: unknown, formData: FormData) {
+export async function handleUpdateInformation(formData: FormData) {
     const validatedFields = schema.safeParse({
         username: formData.get('username'),
         jobTitle: formData.get('jobtitle'),

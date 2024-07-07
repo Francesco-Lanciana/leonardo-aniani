@@ -9,6 +9,7 @@ This is my submission for the Leonardo.ai coding challenge
 -   Better error handling, e.g. if the GraphQL query errors the page will just render an error
 -   Store the user data in a DB
 -   Working tests (I've added a description of what I would test as a backup)
+-   Optimise images, e.g. prefetch when hovering on a tile
 
 ## Suggestions for improving the Leonardo.ai image canvas
 

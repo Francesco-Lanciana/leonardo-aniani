@@ -1,7 +1,6 @@
 'use client';
 
 import styles from './profile.module.scss';
-import { useFormState } from 'react-dom';
 
 import { HStack, Heading, Input, VStack } from '@chakra-ui/react';
 import { Button } from '@chakra-ui/react';
@@ -10,9 +9,9 @@ import { useMemo } from 'react';
 import { USER_USERNAME_COOKIE, USER_JOBTITLE_COOKIE } from '@/constants';
 import { useRouter } from 'next/navigation';
 import { getCookie } from '@/lib/cookie-helpers';
+import FormSubmitButton from '../information/_components/FormSubmitButton/FormSubmitButton';
 
 export default function Home() {
-    const [, formAction, isPending] = useFormState(handleUpdateInformation, null);
     const router = useRouter();
     const initalUsername = useMemo(() => getCookie(USER_USERNAME_COOKIE), []);
     const initialJobTitle = useMemo(() => getCookie(USER_JOBTITLE_COOKIE), []);
@@ -27,7 +26,7 @@ export default function Home() {
                 Edit profile
             </Heading>
 
-            <form action={formAction}>
+            <form action={handleUpdateInformation}>
                 <VStack spacing="1.5rem" className={styles.inputs}>
                     <VStack spacing="0.5rem" width="100%" alignItems="flex-start">
                         <label htmlFor="username">Username</label>
@@ -48,15 +47,8 @@ export default function Home() {
                     <Button type="button" onClick={handleCancel} variant="outline" color="#F47521">
                         Cancel
                     </Button>
-                    <Button
-                        type="submit"
-                        disabled={isPending}
-                        isLoading={isPending}
-                        color="#F47521"
-                        variant="solid"
-                    >
-                        Save
-                    </Button>
+
+                    <FormSubmitButton>Save</FormSubmitButton>
                 </HStack>
             </form>
         </main>

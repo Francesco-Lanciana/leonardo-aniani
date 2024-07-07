@@ -1,10 +1,8 @@
 'use client';
 
 import styles from './register.module.scss';
-import { useFormState } from 'react-dom';
 
 import { Heading, Input, VStack } from '@chakra-ui/react';
-import { Button } from '@chakra-ui/react';
 import { handleRegisterSubmit } from '@/actions/user';
 
 import RegisterImage from '@/../public/register-image.jpg';
@@ -12,9 +10,9 @@ import Image from 'next/image';
 import { USER_JOBTITLE_COOKIE, USER_USERNAME_COOKIE } from '@/constants';
 import { useMemo } from 'react';
 import { getCookie } from '@/lib/cookie-helpers';
+import FormSubmitButton from '../information/_components/FormSubmitButton/FormSubmitButton';
 
 export default function Home() {
-    const [, formAction, isPending] = useFormState(handleRegisterSubmit, null);
     const initalUsername = useMemo(() => getCookie(USER_USERNAME_COOKIE), []);
     const initialJobTitle = useMemo(() => getCookie(USER_JOBTITLE_COOKIE), []);
 
@@ -26,7 +24,7 @@ export default function Home() {
                         Let&apos;s get you set up
                     </Heading>
 
-                    <form action={formAction} className={styles.form}>
+                    <form action={handleRegisterSubmit} className={styles.form}>
                         <VStack spacing="1.5rem">
                             <VStack spacing="0.5rem" width="100%" alignItems="flex-start">
                                 <label htmlFor="username" className={styles.label}>
@@ -52,9 +50,7 @@ export default function Home() {
                             </VStack>
                         </VStack>
 
-                        <Button type="submit" disabled={isPending} isLoading={isPending} color="#F47521">
-                            Continue
-                        </Button>
+                        <FormSubmitButton>Continue</FormSubmitButton>
                     </form>
                 </div>
             </section>
