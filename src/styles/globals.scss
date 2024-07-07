@@ -18,11 +18,10 @@ html {
     -o-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
     font-weight: 500;
-    color: var(--neutral-900);
+    color: white;
 }
 
 html {
-    color: var(--neutral-800);
     font-family: 'Nunito', sans-serif;
     font-optical-sizing: auto;
 }
@@ -125,64 +124,4 @@ fieldset {
 }
 
 :root {
-    --neutral-5: #f3f3f3;
-    --neutral-10: #e6e7e7;
-    --neutral-20: #cfcfcf;
-    --neutral-30: #b6b7b7;
-    --neutral-40: #9d9f9f;
-    --neutral-50: #848786;
-    --neutral-60: #6d6f6f;
-    --neutral-70: #545757;
-    --neutral-80: #3c3e3e;
-    --neutral-90: #232525;
-
-    --primary-5: #edfcfa;
-    --primary-10: #e5fbf8;
-    --primary-20: #c7f5ee;
-    --primary-30: #14c8ad;
-    --primary-40: #02ac92;
-    --primary-50: #029781;
-    --primary-60: #018370;
-    --primary-70: #016f5f;
-    --primary-80: #015b4d;
-    --primary-90: #01473c;
-
-    --danger-5: #fae8e7;
-    --danger-10: #f8dcdb;
-    --danger-20: #f0b7b5;
-    --danger-30: #cd150f;
-    --danger-40: #b9140e;
-    --danger-50: #a4110c;
-    --danger-60: #9a100b;
-    --danger-70: #7b0d09;
-    --danger-80: #5c0a07;
-    --danger-90: #480705;
-
-    --black: #081210;
-    --white: #ffffff;
-
-    --font-weight-regular: 500;
-    --font-weight-demibold: 700;
-
-    --font-size-text-xs: 0.75rem;
-    --font-size-text-s: 0.875rem;
-    --font-size-text-m: 1rem;
-    --font-size-text-l: 1.125rem;
-
-    --text-tone-neutral: var(--neutral-90);
-    --text-tone-neutral-inverted: var(--neutral-5);
-    --text-tone-secondary: var(--neutral-70);
-    --text-tone-secondary-inverted: var(--neutral-20);
-    --text-tone-brand: var(--primary-90);
-    --text-tone-brand-light: var(--primary-40);
-    // --text-tone-positive: var(--neutral-90);
-    // --text-tone-positive-light: var(--neutral-90);
-    --text-tone-critical: var(--danger-90);
-    --text-tone-critical-light: var(--danger-10);
-    // --text-tone-caution: var(--neutral-90);
-    // --text-tone-caution-light: var(--neutral-90);
-    // --text-tone-info: var(--neutral-90);
-    // --text-tone-info-light: var(--neutral-90);
-    // --text-tone-link: var(--neutral-90);
-    // --text-tone-link-light: var(--neutral-90);
 }

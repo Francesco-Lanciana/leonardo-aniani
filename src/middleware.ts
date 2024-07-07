@@ -3,7 +3,6 @@ import type { NextRequest } from 'next/server';
 
 import { USER_USERNAME_COOKIE, USER_JOBTITLE_COOKIE } from './constants';
 
-// This function can be marked `async` if using `await` inside
 export function middleware(request: NextRequest) {
     if (request.nextUrl.pathname === '/register') {
         return NextResponse.next();
@@ -19,7 +18,6 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
 }
 
-// See "Matching Paths" below to learn more
 export const config = {
     matcher: ['/((?!_next/static|_next/image|favicon.ico).*)'],
 };
