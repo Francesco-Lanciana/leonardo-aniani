@@ -49,7 +49,7 @@ const AnimeModal: React.FC<AnimeModalProps> = ({
         <Modal isOpen={isOpen} onClose={onClose} size="xl" scrollBehavior="inside">
             <ModalOverlay />
             <ModalContent width="90vw">
-                <ModalCloseButton className={styles.closeButton} background="rgb(0 0 0 / 67%);" />
+                <ModalCloseButton className={styles.closeButton} background="rgb(0 0 0 / 67%);" zIndex={80} />
                 <ModalBody padding="0 0 2rem 0">
                     <ModalHeader padding={!!bannerImage ? '0' : '3rem 0 0;'} marginBottom="1rem">
                         {!!bannerImage && (
