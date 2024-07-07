@@ -1,36 +1,19 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Francesco's Coding Challenge (Leonardo.ai)
 
-## Getting Started
+This is my submission for the Leonardo.ai coding challenge
 
-First, run the development server:
+## What I would have added with more time
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+-   A more cohesive design system
+-   Incorporated more elements from Chakra UI, e.g. Box, Grid, VStack, etc.
+-   Better error handling, e.g. if the GraphQL query errors the page will just render an error
+-   Store the user data in a DB
+-   Working tests (although for something like this it's pretty debatable whether you need them)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Suggestions for improving the Leonardo.ai image canvas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+In addition to the coding challenge I spent some time redesigning the Leonardo.ai image canvas. The goal was to retain the breadth of options found in the UI whilst making it more beginner friendly and perhaps less error prone. I ran out of time and wasn't able to incorporate everything but I got the bulk of it. Keen for feedback.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+[View the complete designs here](https://www.figma.com/design/TQgjm0T5TmazKoXKW5zuHc/Leonardo?node-id=64-16618&t=kmVwUVhYhIecrhVO-1)
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![alt text](leonardo.png)
