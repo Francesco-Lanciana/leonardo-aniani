@@ -30,9 +30,22 @@ const config: Config = {
     // coveragePathIgnorePatterns: [
     //   "/node_modules/"
     // ],
+    // If you're using MSW, opt out of the browser export condition for MSW tests
+    // For more information, see: https://github.com/mswjs/msw/issues/1786#issuecomment-1782559851
+    testEnvironmentOptions: {
+        customExportConditions: [''],
+    },
+    setupFiles: ['./jest.polyfills.js'],
 
     // Add more setup options before each test is run
     setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
+    // If you plan on importing .gql/.graphql files in your tests, transform them with @graphql-tools/jest-transform
+    transform: {
+        '\\.(gql|graphql)$': '@graphql-tools/jest-transform',
+    },
+    globals: {
+        'globalThis.__DEV__': JSON.stringify(true),
+    },
 };
 
 // createJestConfig is exported this way to ensure that next/jest can load the Next.js config which is async
