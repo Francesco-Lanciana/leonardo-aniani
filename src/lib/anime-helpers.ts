@@ -23,8 +23,8 @@ export function calcNumReview(scoreDistribution: { score: number; amount: number
  * @param description A string representing the description of an anime
  * @returns A more display friendly version of the description
  */
-export function formatDescription(description: string) {
-    return description.replace(/<br\s*\/?>/gi, '\n');
+export function formatDescription(description: string | null): string {
+    return description?.replace(/<br\s*\/?>/gi, '\n') ?? '';
 }
 
 /**
@@ -32,6 +32,6 @@ export function formatDescription(description: string) {
  * @param averageScore A number representing the average score of an anime
  * @returns The average score in display format
  */
-export function getAverageScoreDisplayNumber(averageScore: number) {
+export function getAverageScoreDisplayNumber(averageScore: number): number {
     return averageScore / 10;
 }
