@@ -13,9 +13,11 @@ export function middleware(request: NextRequest) {
 
     if (!usernameCookie?.value || !jobtitleCookie?.value) {
         return NextResponse.redirect(new URL('/register', request.url));
+    } else if (request.nextUrl.pathname === '/') {
+        return NextResponse.redirect(new URL('/information', request.url));
+    } else {
+        return NextResponse.next();
     }
-
-    return NextResponse.next();
 }
 
 export const config = {
