@@ -17,7 +17,7 @@ export default function Home() {
     const initialJobTitle = useMemo(() => getCookie(USER_JOBTITLE_COOKIE), []);
 
     function handleCancel() {
-        router.push('/information');
+        router.back();
     }
 
     return (
