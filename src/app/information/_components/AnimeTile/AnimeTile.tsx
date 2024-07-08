@@ -36,7 +36,7 @@ const AnimeTile: React.FC<AnimeTileProps> = ({
                         alt={`Cover image for ${title}`}
                         fill={true}
                         className={styles.image}
-                        sizes="(max-width: 400px) 100vw, (max-width: 800px) 50vw"
+                        sizes="(max-width: 400px) 100vw, (max-width: 800px) 50vw, 33vw"
                     />
                 </div>
                 <Heading as="h4" size="xs" noOfLines={3}>
