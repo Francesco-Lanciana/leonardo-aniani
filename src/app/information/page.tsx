@@ -74,7 +74,7 @@ interface AnimeInfo {
         romaji: string;
         english: string;
     };
-    description: string;
+    description: string | null;
     episodes: number;
     averageScore: number;
     stats: {
