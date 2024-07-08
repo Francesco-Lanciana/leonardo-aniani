@@ -6,7 +6,7 @@ This is my submission for the Leonardo.ai coding challenge
 
 ## Next steps
 
-I believe I completed the required steps, but given more time I would add the following:
+If I was to continue working on this I would add the following:
 
 -   Some sort of cohesive design system
 -   Incorporated more elements from Chakra UI, e.g. Box, Grid, etc.
