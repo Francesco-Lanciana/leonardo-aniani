@@ -2,7 +2,11 @@
 
 This is my submission for the Leonardo.ai coding challenge
 
-## What I would have added with more time
+[You can view the deployed version here](https://leonardo-challenge-wine.vercel.app)
+
+## Next steps
+
+I believe I completed the required steps, but given more time I would add the following:
 
 -   Some sort of cohesive design system
 -   Incorporated more elements from Chakra UI, e.g. Box, Grid, etc.
@@ -12,9 +16,9 @@ This is my submission for the Leonardo.ai coding challenge
 -   Optimise images, e.g. prefetch when hovering on a tile
 -   Make the site look better on a mobile phone
 
-## Suggestions for improving the Leonardo.ai image canvas
+## Bonus: Suggestions for improving the Leonardo.ai image canvas
 
-In addition to the coding challenge I spent some time redesigning the Leonardo.ai image canvas. The goal was to retain the breadth of options found in the UI whilst making it more beginner friendly and perhaps less error prone. I ran out of time and wasn't able to incorporate everything but I got the bulk of it. Keen for feedback.
+In addition to the coding challenge I spent some time redesigning the Leonardo.ai image canvas. The goal was to retain the breadth of options found in the UI whilst making it more beginner friendly and perhaps less error prone. I ran out of time and wasn't able to incorporate everything but I think I got the bulk of it. Keen for feedback.
 
 [View the complete designs here](https://www.figma.com/design/TQgjm0T5TmazKoXKW5zuHc/Leonardo?node-id=64-16618&t=kmVwUVhYhIecrhVO-1)
 
